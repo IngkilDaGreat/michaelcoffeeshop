@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style-1.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">MG Coffee Shop <i class="fas fa-mug-hot"></i></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#about">about</a>
+            <a href="index-1.html">menu</a>
+            <a href="#contact us">Contact Us</a>
+            <a href="#news">News</a>
+        </nav>
+
+        <a href="#" class="btn">Order Now</a>
+    </header>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section">
+        <div class="menu-category">
+            <h2>Menu</h2>
+            
+            <h3>Drinks</h3>
+            <ul class="drinks">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Fresh Juices</li>
+                <li>Smoothies</li>
+                <li>Specialty Lattes</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <h3>Pastries</h3>
+            <ul class="pastries">
+                <li>Croissants (Plain, Chocolate, Almond)</li>
+                <li>Muffins (Blueberry, Banana Nut, Chocolate Chip)</li>
+                <li>Scones (Plain, Cranberry Orange, Lemon Poppyseed)</li>
+                <li>Danish Pastries (Apple, Cheese, Raspberry)</li>
+                <li>Cinnamon Rolls</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <h3>Food</h3>
+            <ul class="food">
+                <li>Sandwiches (Turkey & Swiss, Ham & Cheese, Veggie Delight)</li>
+                <li>Salads (Caesar Salad, Garden Salad, Greek Salad)</li>
+                <li>Paninis (Caprese, Chicken Pesto, Roast Beef)</li>
+                <li>Wraps (Grilled Chicken, Falafel, Veggie)</li>
+                <li>Soups (Tomato Basil, Chicken Noodle, Butternut Squash)</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <h3>Tea</h3>
+            <ul class="tea">
+                <li>Green Tea</li>
+                <li>Black Tea</li>
+                <li>Herbal Tea (Chamomile, Peppermint, Rooibos)</li>
+                <li>Chai Tea</li>
+                <li>White Tea</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to toggle the display of submenu items
+        const menuCategories = document.querySelectorAll('.menu-category');
+
+        menuCategories.forEach(category => {
+            const title = category.querySelector('h3');
+            const sublist = category.querySelector('ul');
+
+            title.addEventListener('click', () => {
+                sublist.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
